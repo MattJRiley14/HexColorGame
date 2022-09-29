@@ -1,0 +1,74 @@
+body {
+    background: #232323;
+    margin: 0;
+    font-family: "Montserrat", "Avenir"; /* Second font added here because "Avenir" is not accepted by all browsers */
+}
+
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%; /* Padding percentage gets it's size from the WIDTH of the parent element, even if it is for top or bottom. Using height: 30% would be 30% of the height of the parent element (Which is this case would be the container div. Container div has a height of 0 so setting height to a percentage would give it a height of 0).*/
+    float: left;
+    margin: 1.66%;
+    border-radius: 25%;
+    transition: background 0.5s; /* This is for whenever there is a change to the background */
+    -webkit-transition: background 0.5s; /* This is for browser support becuase the transition: background 0.5s does not work in all browsers */
+    -moz-transition: background 0.5s; /* This is for browser support becuase the transition: background 0.5s does not work in all browsers */
+}
+
+#container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    line-height: 1.1;
+    font-weight: normal;
+    color: white;
+    background: steelblue;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#colorDisplay {
+    font-size: 200%;
+}
+
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected {
+    color: white;
+    background: steelblue;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%; /* This changes the height of the element not the padding */
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit; /* inherit takes the property being set from the element's parent element */
+    transition: all 0.5s; /* This bascially means whenever there is a change */
+    -webkit-transition: all 0.5s; /* This is for browser support becuase the transition: all 0.5s does not work in all browsers */
+    -moz-transition: all 0.5s; /* This is for browser support becuase the transition: all 0.5s does not work in all browsers */
+    outline: none; /* Gets rid of outline of buttons that the browser automatically sets */
+}
+
+button:hover {
+    color: white;
+    background: steelblue;
+}
